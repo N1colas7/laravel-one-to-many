@@ -14,6 +14,6 @@ class TypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $types = ('HMTL', 'CSS', 'Javascripts','PHP', 'VueJs','SQL', 'Laravel');
     }
 }
