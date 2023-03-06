@@ -10,6 +10,7 @@
             </div>
             <div class="col-12 m-3">
                  <p><strong>Slug:</strong>{{$post->slug}}</p>
+                 <p><strong>Tipo:</strong>{{ $post->type ? $post->type->name : 'Senza Tipologia'}}</p>
                  <label class="d-block"><strong>Contenuto:</strong></label>
                  <p>{{$post->content}}</p>
             </div>
