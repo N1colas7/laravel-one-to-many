@@ -26,6 +26,16 @@
                         <div class="text-danger">{{$message}}</div>
                     @enderror
                 </div>
+                <div class="form-group mt-3 ">
+                    <label class="control-label">
+                        Tipo
+                   </label>
+                   <select class="form-control" name="type_id" id="type_id">
+                        @foreach ($types as $type)
+                            <option value="{{ $type->id }}">{{ $type->name }}</option>
+                        @endforeach
+                   </select>
+                </div>
                 <div class="form-group mt-3">
                     <label class="control-label">
                          Contenuto
